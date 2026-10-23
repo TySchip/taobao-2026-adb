@@ -92,7 +92,7 @@ $adbExe = & .\.venv\Scripts\python.exe -c "from adbutils import adb_path; print(
 仓库提供 **82 项离线测试**，无需连接手机、安装 ADB 或安装控制依赖：
 
 ```powershell
-python -B -m unittest discover -s tests -v
+python -X utf8 -B -m unittest discover -s tests -v
 ```
 
 测试覆盖任务筛选、点击前变化、搜索、连续浏览、支付宝与拍立淘短停、升级弹窗恢复，以及验证中止。此前部分浏览和短停流程做过 Android 14 真机单项验证；本次升级弹窗更新仅做离线验证，没有进行完整任务轮次的真机验收。
